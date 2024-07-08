@@ -134,7 +134,7 @@ nav {
 .img-slider {
   max-width: 100%;
 }
-.slider a {
+.slider button {
   position: absolute;
   z-index: 1;
   top: 30%;
@@ -143,6 +143,7 @@ nav {
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
+  border: 0;
 }
 .control_next {
   right: 0;
@@ -259,7 +260,7 @@ nav {
 .foot-panel2 ul {
   margin-top: 50px;
 }
-.foot-panel2 ul a {
+.foot-panel2 ul p {
   display: block;
   font-size: 15px;
   margin-top: 10px;

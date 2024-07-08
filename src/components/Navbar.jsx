@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => (
   <nav>
-    <a href="/">
+    <div>
       <img src="./assets/amazon_logo.png" alt="Amazon Logo" width="100px" />
-    </a>
+    </div>
     <div className="desktop-nav">
       <div class="deliver-container">
         <div className="deliver">
@@ -57,7 +57,11 @@ const Navbar = () => (
         <h1>& Orders</h1>
       </div>
       <div class="nav-cart-border">
-        <img src="./assets/grocery-store.png" width="30px" />
+        <img
+          src="./assets/grocery-store.png"
+          alt="grocery store"
+          width="30px"
+        />
         Cart
       </div>
     </div>
@@ -70,7 +74,7 @@ const Navbar = () => (
           width="20px"
         />
       </div>
-      <img src="./assets/grocery-store.png" width="30px" />
+      <img src="./assets/grocery-store.png" alt="grocery store" width="30px" />
     </div>
   </nav>
 );

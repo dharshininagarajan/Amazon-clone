@@ -3,7 +3,7 @@ import React from "react";
 const NavSub = () => (
   <div class="nav-bottom">
     <div>
-      <img src="./assets/menu_icon.png" width="20px" />
+      <img src="./assets/menu_icon.png" alt="menu icon" width="20px" />
     </div>
     <p>All</p>
     <p>Fresh</p>

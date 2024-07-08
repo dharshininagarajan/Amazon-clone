@@ -6,31 +6,31 @@ const Footer = () => (
     <div class="foot-panel2">
       <ul>
         <p>Get to Know Us</p>
-        <a>About Us</a>
-        <a>Careers</a>
-        <a>Press Releases</a>
-        <a>Amazon Science</a>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press Releases</p>
+        <p>Amazon Science</p>
       </ul>
       <ul>
         <p>Connect with Us</p>
-        <a>Facebook</a>
-        <a>Twitter</a>
-        <a>Instagram</a>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
       </ul>
       <ul>
         <p>Make Money with Us</p>
-        <a>Sell on Amazon</a>
-        <a>Sell under Amazon Accelator</a>
-        <a>Amazon Global Selling</a>
-        <a>Advertize your products</a>
+        <p>Sell on Amazon</p>
+        <p>Sell under Amazon Accelator</p>
+        <p>Amazon Global Selling</p>
+        <p>Advertize your products</p>
       </ul>
       <ul>
         <p>Let Us Help You</p>
-        <a>COVID-19 and Amazon</a>
-        <a> Your Account</a>
-        <a>Returns Centre</a>
-        <a>Amazon App Download</a>
-        <a>Help</a>
+        <p>COVID-19 and Amazon</p>
+        <p> Your Account</p>
+        <p>Returns Centre</p>
+        <p>Amazon App Download</p>
+        <p>Help</p>
       </ul>
     </div>
     <div class="foot-panel3">

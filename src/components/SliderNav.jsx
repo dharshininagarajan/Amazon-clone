@@ -5,6 +5,14 @@ const SliderNav = () => {
   const [n, setN] = useState(0);
 
   useEffect(() => {
+    const changeSlide = () => {
+      imgsRef.current.forEach((img, index) => {
+        if (img) {
+          img.style.display = index === n ? "block" : "none";
+        }
+      });
+    };
+
     imgsRef.current.forEach((img, index) => {
       if (img) {
         img.style.display = "none";
@@ -13,34 +21,25 @@ const SliderNav = () => {
     if (imgsRef.current[0]) {
       imgsRef.current[0].style.display = "block";
     }
-  }, []);
 
-  const changeSlide = () => {
-    imgsRef.current.forEach((img, index) => {
-      if (img) {
-        img.style.display = index === n ? "block" : "none";
-      }
-    });
-  };
-
-  useEffect(() => {
     changeSlide();
+    return () => {};
   }, [n]);
 
   return (
     <div className="slider">
-      <a
+      <button
         className="control_prev"
         onClick={() => setN(n > 0 ? n - 1 : imgsRef.current.length - 1)}
       >
         &#8592;
-      </a>
-      <a
+      </button>
+      <button
         className="control_next"
         onClick={() => setN(n < imgsRef.current.length - 1 ? n + 1 : 0)}
       >
         &#8594;
-      </a>
+      </button>
       <ul>
         {[
           "header4.jpg",
@@ -51,7 +50,7 @@ const SliderNav = () => {
         ].map((src, index) => (
           <img
             key={index}
-            class="img-slider"
+            className="img-slider"
             ref={(el) => (imgsRef.current[index] = el)}
             src={`./assets/${src}`}
             alt={`Slide ${index + 1}`}
